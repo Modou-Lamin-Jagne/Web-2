@@ -1,0 +1,30 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 'header header header'
+    'sidebar main main'
+    'footer footer footer';
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+
+.footer{
+    grid-area: footer;
+}
