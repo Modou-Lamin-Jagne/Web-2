@@ -40,22 +40,52 @@ const myHeading = document.querySelector('h1');
  * 0 - 39: F 
  */
 
-let grade = Number(prompt("Enter your grade: "));
+// let grade = Number(prompt("Enter your grade: "));
 
-if (grade >= 90 && grade <= 100) {  // A+
-    myHeading.textContent = "A+";
-} else if (grade >= 80 && grade <= 89) {  // A
-    myHeading.textContent = "A";
-} else if (grade >= 70 && grade <= 79) {  // A-
-    myHeading.textContent = "A-";
-} else if (grade >= 60 && grade <= 69) {  // B
-    myHeading.textContent = "B";
-} else if (grade >= 50 && grade <= 59) {  // C
-    myHeading.textContent = "C";
-} else if (grade >= 40 && grade <= 49) {  // D
-    myHeading.textContent = "D";
-} else if (grade >= 0 && grade <= 39) {  // F
-    myHeading.textContent = "F";
-} else {
-    myHeading.textContent = "Invalid Grade";
+// if (grade >= 90 && grade <= 100) {  // A+
+//     myHeading.textContent = "A+";
+// } else if (grade >= 80 && grade <= 89) {  // A
+//     myHeading.textContent = "A";
+// } else if (grade >= 70 && grade <= 79) {  // A-
+//     myHeading.textContent = "A-";
+// } else if (grade >= 60 && grade <= 69) {  // B
+//     myHeading.textContent = "B";
+// } else if (grade >= 50 && grade <= 59) {  // C
+//     myHeading.textContent = "C";
+// } else if (grade >= 40 && grade <= 49) {  // D
+//     myHeading.textContent = "D";
+// } else if (grade >= 0 && grade <= 39) {  // F
+//     myHeading.textContent = "F";
+// } else {
+//     myHeading.textContent = "Invalid Grade";
+// }
+
+
+// Functions 
+
+function computeGrade(grade) {
+    if (grade >= 90 && grade <= 100) {  // A+
+        return "A+";
+    } else if (grade >= 80 && grade <= 89) {  // A
+        return "A";
+    } else if (grade >= 70 && grade <= 79) {  // A-
+        return "A-";
+    } else if (grade >= 60 && grade <= 69) {  // B
+        return "B";
+    } else if (grade >= 50 && grade <= 59) {  // C
+        return "C";
+    } else if (grade >= 40 && grade <= 49) {  // D
+        return "D";
+    } else if (grade >= 0 && grade <= 39) {  // F
+        return "F";
+    } else {
+        return "Invalid Grade";
+    }
+}
+
+// Events and Event Listeners
+const grade = Number(prompt("Enter your grade: "));
+
+document.querySelector('button').onclick = function() {
+    myHeading.textContent = computeGrade(grade)
 }
