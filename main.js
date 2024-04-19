@@ -89,3 +89,10 @@ const grade = Number(prompt("Enter your grade: "));
 document.querySelector('button').onclick = function() {
     myHeading.textContent = computeGrade(grade)
 }
+
+// Loops
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
