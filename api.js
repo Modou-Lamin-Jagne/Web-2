@@ -5,6 +5,7 @@ function loadStudentTable(){
     var mat_no = document.getElementById("mat_no").value;
     var gender = document.getElementById("gender").value;
     var address = document.getElementById("address").value;
+    var department = document.getElementById("department").value;
 
 
     var Stable = document.getElementById("SdataTable");
@@ -33,6 +34,7 @@ function loadLecturersTable(){
     var first_name = document.getElementById("l_first_name").value;
     var middle_name = document.getElementById("l_middle_name").value;
     var last_name = document.getElementById("l_last_name").value;
+    var department = document.getElementById("department").value;
     var courses = document.getElementById("courses").value;
     var gender = document.getElementById("l_gender").value;
     var address = document.getElementById("l_address").value;
@@ -49,6 +51,7 @@ function loadLecturersTable(){
     var cell5 = newRow.insertCell(4)
     var cell6 = newRow.insertCell(5)
     var cell7 = newRow.insertCell(6)
+    var cell8 = newRow.insertCell(7)
 
     cell1.innerHTML = first_name;
     cell2.innerHTML = middle_name;
@@ -96,6 +99,7 @@ function clear(){
     var first_name = document.getElementById("first_name");
     var middle_name = document.getElementById("middle_name");
     var last_name = document.getElementById("last_name");
+    var department = document.getElementById("department");
     var mat_no = document.getElementById("mat_no");
     var courses = document.getElementById("mat_no");
     var gender = document.getElementById("gender");
