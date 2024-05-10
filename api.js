@@ -153,6 +153,26 @@ function loadScTable(){
     cell1.innerHTML = school_name;
     cell2.innerHTML = sc_location;
 }
+function loadSemestersTable(){
+
+    var Setable = document.getElementById("SedataTable");
+
+    var semester_name = document.getElementById("semester_name").value;
+    var starts = document.getElementById("starts").value;
+    var ends = document.getElementById("ends").value;
+
+
+    var newRow = Setable.insertRow(-1);
+
+
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1)
+    var cell3 = newRow.insertCell(2)
+
+    cell1.innerHTML = semester_name;
+    cell2.innerHTML = starts;
+    cell3.innerHTML = ends;
+}
 
 function clear(){
     var first_name = document.getElementById("first_name");
@@ -179,6 +199,9 @@ function clear(){
     var d_school = document.getElementById("d_school");
     var school_name = document.getElementById("school_name");
     var sc_location = document.getElementById("s_location");
+    var semester_name = document.getElementById("semester_name");
+    var starts = document.getElementById("starts");
+    var ends = document.getElementById("ends");
 
     
     first_name = '';
@@ -204,5 +227,8 @@ function clear(){
     d_school = '';
     school_name = '';
     sc_location = '';
+    semester_name = '';
+    starts = '';
+    ends = '';
 
 }
