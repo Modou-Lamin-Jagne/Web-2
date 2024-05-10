@@ -5,12 +5,12 @@ function loadStudentTable(){
     var mat_no = document.getElementById("mat_no").value;
     var gender = document.getElementById("gender").value;
     var address = document.getElementById("address").value;
+    // var department = document.getElementById("department").value;
     var department = document.getElementById("department").value;
 
 
     var Stable = document.getElementById("SdataTable");
     var newRow = Stable.insertRow(-1);
-
 
     var cell1 = newRow.insertCell(0);
     var cell2 = newRow.insertCell(1)
@@ -101,7 +101,7 @@ function clear(){
     var last_name = document.getElementById("last_name");
     var department = document.getElementById("department");
     var mat_no = document.getElementById("mat_no");
-    var courses = document.getElementById("mat_no");
+    var courses = document.getElementById("courses");
     var gender = document.getElementById("gender");
     var address = document.getElementById("address");
     var contact = document.getElementById("address");
